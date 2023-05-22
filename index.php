@@ -3,10 +3,10 @@
 require_once __DIR__ . '/models/Movie.php';
 
 $movies = [
-    new Movie ('Iron Man 3' , 'Action' , '120 min'),
-    new Movie ('Batman' , 'Action' , '116 min'),
-    new Movie ('Thor' , 'Fantasy' , '116 min'),
-    new Movie ('Ritorno al futuro' , 'Fantasy' , '116 min')
+    new Movie ('Iron Man 3' , 'Action' , 115),
+    new Movie ('Batman' , 'Action' , 120),
+    new Movie ('Thor' , 'Fantasy' , 112),
+    new Movie ('Ritorno al futuro' , 'Fantasy' , 102)
 ];
 
 ?>
@@ -35,7 +35,7 @@ $movies = [
         <tr>
             <th scope="row"><?php echo $movie->title ?></th>
             <td><?php echo $movie->genre ?></td>
-            <td></td>
+            <td><?php echo $movie->duration ?></td>
            
         </tr>
         <?php endforeach; ?>
